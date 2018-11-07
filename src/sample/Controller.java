@@ -28,7 +28,11 @@ public class Controller {
 
             String s = displayer.getText();
             outputDisplay.setText((outputDisplay.getText() + "Du har skrevet: " + s + "\n"));
-            java.awt.Desktop.getDesktop().browse(java.net.URI.create(s));
+            s = s.toLowerCase();
+            if (s.charAt(0) == 'w' && s.charAt(1) == 'w' && s.charAt(2) == 'w' && s.charAt(3) == '.')
+                java.awt.Desktop.getDesktop().browse(java.net.URI.create(s));
+            else
+            java.awt.Desktop.getDesktop().browse(java.net.URI.create("www." + s));
         }catch (Exception e){
             System.out.println("Kan ikke finde siden");
         }
