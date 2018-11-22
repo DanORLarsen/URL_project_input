@@ -52,4 +52,8 @@ public class Controller {
         java.awt.Desktop.getDesktop().browse(java.net.URI.create(htmlPath));
 
     }
+
+    public void getGitHub(MouseEvent mouseEvent) throws IOException {
+        java.awt.Desktop.getDesktop().browse(java.net.URI.create("http://github.com/DanORLarsen"));
+    }
 }

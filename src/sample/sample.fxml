@@ -38,7 +38,7 @@
             <GridPane.margin>
                 <Insets />
             </GridPane.margin></TextArea>
-        <Label prefHeight="45.0" prefWidth="152.0" text="  Min GUI!" textAlignment="CENTER">
+        <Label fx:id="MinGui" onMouseClicked="#getGitHub" prefHeight="45.0" prefWidth="190.0" text="  Min GUI!" textAlignment="CENTER">
             <font>
                 <Font size="30.0" />
             </font>
